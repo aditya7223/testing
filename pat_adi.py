@@ -13,6 +13,6 @@ def main():
      
     # Display the sum
     end_time = time.time()
-    return ('The START IS {0} and END IS {1}'.format(start_time, end_time ))
+    return ('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
     
     #return("Read the file from S3 at", end_time , "and time elapsed is  --> ", (end_time - start_time) )
