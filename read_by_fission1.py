@@ -27,7 +27,8 @@ def main():
 	data = json.loads(lines)
 	transactions = data['users']
 	#transactions = data['dataset']['fields']
-	print(str(len(transactions)))
+	#print(str(len(transactions)))
 	# end_time = time.time()
 	# print("Read the file from S3 at", end_time , "and time elapsed is  --> ", (end_time - start_time) )
-	return str(len(transactions))
+	# return str(len(transactions))
+	return "\n"
