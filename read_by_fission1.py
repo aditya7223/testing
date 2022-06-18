@@ -9,12 +9,12 @@ def main():
 	session = boto3.Session(
 			    aws_access_key_id='AKIAXBNIAY3OSGPM5GHY',
 			    aws_secret_access_key='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',
-			    region_name='us-east-1')
+			    region_name='ap-southeast-1')
 			    
 	s3 = session.resource('s3')
 
 	# get a handle on the bucket that holds your file
-	bucket = s3.Bucket('test-case-1') # example: energy_market_procesing
+	bucket = s3.Bucket('bucket-to-fission') # example: energy_market_procesing
 
 	# get a handle on the object you want (i.e. your file)
 	obj = bucket.Object(key='2.json') # example: market/zone1/data.csv
